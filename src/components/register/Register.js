@@ -40,7 +40,7 @@ function Register() {
   function handleRequest() {
     console.log("sending");
     axios
-      .post("https://ne-instagram.herokuapp.com/register", values)
+      .post("https://ne-instagram.herokuapp.com/api/register", values)
       .then((res) => {
         console.log(res);
         if (res.data === "Taken") {
